@@ -81,7 +81,7 @@
       class="checkbox"
       type="checkbox"
       on:click={handleCheckbox}
-      defaultChecked={todo.done} />
+      bind:checked={todo.done} />
     <div class:line={todo.done} />
     <li class={todo.done ? 'li-done' : 'li-notdone'}>{todo.task}</li>
   </div>
